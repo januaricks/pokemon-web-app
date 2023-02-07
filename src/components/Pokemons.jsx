@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import { Footer } from "./Footer";
 import { PokemonCard } from "./PokemonCard";
 
 const base_url = "https://pokeapi.co/api/v2/pokemon";
@@ -79,6 +80,7 @@ export const Pokemons = () => {
             Next
           </Button>
         </div>
+        <Footer />
       </div>
     </>
   );
