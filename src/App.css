@@ -6,12 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* home page */
 .content-home {
   display: flex;
   position: relative;
 }
-.content-img,
-img {
+.content-img {
+  width: 100%;
+}
+.img-home {
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -27,4 +30,19 @@ img {
   position: absolute;
   left: 29%;
   top: 40%;
+}
+
+/* pokemons page */
+.content-pokemons {
+  background-color: #f9f5d2;
+}
+.img-hover {
+  transition: linear 200ms;
+  cursor: pointer;
+}
+.img-hover:hover {
+  transform: scale(1.1);
+}
+.img-card {
+  height: 140px;
 }
