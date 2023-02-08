@@ -10,8 +10,8 @@ const base_url = "https://pokeapi.co/api/v2/pokemon";
 export const Pokemons = () => {
   const [pokemons, setPokemons] = useState([]);
   const [url, setUrl] = useState(base_url);
-  const [nextUrl, setNextUrl] = useState();
-  const [prevUrl, setPrevUrl] = useState();
+  const [nextUrl, setNextUrl] = useState(null);
+  const [prevUrl, setPrevUrl] = useState(null);
 
   const getPokemons = async () => {
     try {
